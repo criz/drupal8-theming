@@ -138,13 +138,45 @@ body {
     color: rgb(203,16,31) !important;
 }
 
+
 /*********************************************
  * END Style
  *********************************************/
 section.end h1,
+section.top h1,
 section.end h2,
+section.top h2,
 section.end h3,
+section.top h3,
 section.end p,
-section.end a{
+section.top p,
+section.end a,
+section.top a {
     color: #fff !important;
+}
+
+/* Overwrite fontawesome styles */
+
+.reveal .fa {
+    -moz-font-feature-settings: normal;
+    -moz-font-language-override: normal;
+    -moz-osx-font-smoothing: grayscale;
+    -x-system-font: none;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: inherit;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.reveal .code__bigger {
+  font-size: 1.2em;
+}
+.reveal .code__huge {
+    font-size: 1.4em;
 }

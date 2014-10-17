@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>#d8day - TRACKNAME</title>
+		<title>#d8day - THEMING</title>
 
-		<meta name="description" content="WHAT IS YOUR PRESENTATION ABOUT">
-		<meta name="author" content="YOUR NAME">
+		<meta name="description" content="Drupal 8 Theming - What's new and what's cool">
+		<meta name="author" content="criz">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -32,7 +32,10 @@
 			}
 		</script>
 
-		<!--[if lt IE 9]>
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
+
+        <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 	</head>
@@ -44,19 +47,33 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>SESSION NAME</h1>
+					<h1>Drupal 8 Theming</h1>
 					<h3>#d8day</h3>
 					<p>
-						<small>by <a href="http://www.drupal-austria.at">YOUR NAME</a> / <a href="http://twitter.com/drupalAT">@YOUTTWTIITERNAME</a></small>
+						<small>by <a href="https://www.drupal.org/u/criz">Christian Ziegler</a> / <a href="http://twitter.com/crizzirc">@crizzirc</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Slide title</h2>
-					<p>
-						what you want to say
-					</p>
+					<h2>Christian Ziegler</h2>
+                    <img width="150" height="auto" src="images/criz.jpg" alt="Christian Ziegler" style="float: left; margin-right: 2em;">
+					<ul>
+                      <li>Drupal seit 2005</li>
+                      <li>Sitebuilding + Frontend</li>
+                      <li>Drupal Austria Obmann</li>
+					</ul>
+                    <div style="max-height: 50px;">
+                    <img height="25" width="auto" src="images/zites_logo.gif" alt="zites Logo" style="display: inline-block; margin-top: 10px;" />
+                    <!--<img height="25" width="auto" src="images/drunomics_logo.png" alt="drunomics Logo" style="display: inline-block" />-->
+                    <img height="50" width="auto" src="images/drupal_austria_logo.gif" alt="drupalAT Logo" style="display: inline-block" />
+                    <img height="50" width="auto" src="images/ao_logo.jpg" alt="acolono Logo" style="display: inline-block" />
+                    </div>
 
+                    <footer style="clear: both; margin-top: 2em; font-size: 0.5em;">
+                        <i class="fa fa-home" style="font-size: 2em; vertical-align: middle;"></i> <span style="line-height: 2em; vertical-align: middle;"><a style="color: black" href="http://www.christianziegler.net">christianziegler.net</a></span>
+                        <i class="fa fa-envelope" style="font-size: 2em; margin-left: 1em; vertical-align: middle;"></i> <span style="line-height: 2em; vertical-align: middle;"><a style="color: black" href="mailto:c.ziegler@drupal-austria.at">c.ziegler@drupal-austria.at</a></span>
+                        <i class="fa fa-twitter" style="font-size: 2em; margin-left: 1em; vertical-align: middle;"></i> <span style="line-height:2em; vertical-align: middle;"><a style="color: black" href="http://twitter.com/crizzirc">@crizzirc</a></span>
+                    </footer>
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
@@ -64,121 +81,663 @@
 
 				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
+					<section class="top" data-background="rgb(203,16,31)">
+						<h1>Was ist neu in <br />Drupal 8?</h1>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+                        <h3>Was ist neu in Drupal 8?</h3>
+                        <ul>
+                            <li>Mehr HTML5</li>
+                            <li class="fragment">WAI-ARIA Roles</li>
+                            <li class="fragment">75% weniger IDs <span class="fragment"><pre><code data-trim contenteditable><DIV ID="BAD-PRACTICE">...</DIV></code></pre></span></li>
+                            <li class="fragment">Alles responsive</li>
+                            <li class="fragment">Neue Theme-engine (TWIG)</li>
+
+                        </ul>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<img width="200" height="auto" src="images/drupal_austria_logo.gif" alt="drupalAT Logo">
+                        <h3>Was ist neu in Drupal 8?</h3>
+                        <ul>
+                            <li>Keine JavaScript Library Vorgaben</li>
+                            <li class="fragment">SVG-Icons statt PNGs</li>
+                            <li class="fragment">Kein Support für <span class="fragment">IE6</span><span class="fragment">, IE7</span> <span class="fragment">und IE8</span></li>
+                            <li class="fragment">Neues Core-Theme Classy</li>
+                            <li class="fragment">CSS Vorgaben (SMACSS & BEM)</li>
+                        </ul>
 					</section>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+                    <section class="top" data-background="rgb(203,16,31)">
+                        <h1>Drupal 8 Core Themes</h1>
+                    </section>
+                    <section>
+                        <h2>Seven</h2>
+                        <img src="images/screenshot_seven.png" alt="seven" />
+                        <aside class="notes">
+                            Admin theme. Voll responsive inkl. Menus. Überarbeite node edit pages u.v.m. Styleguides.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Bartik</h2>
+                        <img src="images/screenshot_bartik.png" alt="bartik" />
+                        <aside class="notes">
+                            Beispieltheme für das Frontend. Mit allen möglichen Klassen.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Stark</h2>
+                        <img src="images/screenshot_stark.png" alt="stark" />
+                        <aside class="notes">
+                            Nacktes Beispieltheme für das Frontend. Nur das wirklich nötige HTML plus Klassen.
+                        </aside>
+                    </section>
+                    <section>
+                        <img src="images/theme-overview.png" alt="Drupal 8 Core Themes" width="auto" height="100%" />
+                    </section>
+                </section>
+
+				<section>
+                    <section class="top" data-background="rgb(203,16,31)">
+                        <h1>Wie erstelle ich ein neues Theme?</h1>
+                    </section>
+                    <section>
+                        <h3>1) THEME-NAME.info.yml anlegen und befüllen</h3>
+                        <pre class="code__bigger"><code data-trim contenteditable>
+  name: THEME-NAME
+  description: 'A short description for the theme.'
+  package: Custom
+  type: theme
+  version: 1.0
+  core: 8.x
+                        </code></pre>
+                        <small>Datei: THEME-NAME.info.yml</small>
+                    </section>
+                    <section>
+                        <h3>2) Regionen definieren</h3>
+                        <small><a href="images/drupal8-regions.png">Was sind Regionen?</a></small>
+                        <pre class="code__bigger"><code data-trim contenteditable>
+regions:
+  header: 'Header'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
+regions_hidden:
+- sidebar_first
+                        </code></pre>
+                        <small>Datei: THEME-NAME.info.yml</small>
+                    </section>
+                    <section>
+                        <h3>3) CSS anlegen und definieren</h3>
+                        <pre class="code__bigger"><code data-trim contenteditable>
+stylesheets:
+  all:
+    - css/base.css
+    - css/layout.css
+    - css/components.css
+  print:
+    - css/print.css
+                        </code></pre>
+                        <small>Datei: THEME-NAME.info.yml</small><br />
+                    </section>
+                    <section>
+                        <h3>CSS-Dateien entfernen oder überschreiben </h3>
+                        <pre class="code__bigger"><code data-trim contenteditable>
+# Overwrite a CSS file:​
+stylesheets-overwrite:
+  - normalize.css
+# Remove a CSS file:​
+stylesheets-remove:
+  - normalize.css
+                        </code></pre>
+                        <small>Datei: THEME-NAME.info.yml</small><br />
+                        <small>Change record: https://www.drupal.org/node/1876600</small>
+                    </section>
+                    <section>
+                        <h3>4) Javascript (libraries) hinzufügen</h3>
+                        Anlegen einer neuen Datei: THEME-NAME.libraries.yml
+                        <pre class="code__bigger"><code data-trim contenteditable>
+base:
+  version: 1.x
+  js:
+    js/custom.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+                        </code></pre>
+                        <small>Datei: THEME-NAME.libraries.yml</small><br />
+                    </section>
+                    <section>
+                        In THEME-NAME.info.yml muss diese Library noch eingebunden werden:
+                        <pre class="code__bigger"><code data-trim contenteditable>
+libraries:
+  - THEME-NAME/base
+                        </code></pre>
+                        <small>Datei: THEME-NAME.info.yml</small><br />
+                    </section>
+                    <section>
+                        Wie inkludiere ich eine externe Library?
+                        <br /><small>Beispiel flexslider:</small>
+                        <pre class="code__bigger"><code data-trim contenteditable>
+flexslider:
+  version: 2.2.2
+  license:
+    name: gpl2
+    url: http://www.gnu.org/licenses/gpl-2.0.html
+    gpl-compatible: true
+  remote: https://github.com/woothemes/FlexSlider
+  js:
+    lib/flexslider/js/jquery.flexslider-min.js: {}
+  css:
+    theme:
+    lib/flexslider/css/flexslider.css: {}
+  dependencies:
+    - core/jquery
+                        </code></pre>
+                        <small>Datei: THEME-NAME.libraries.yml</small><br />
+                    </section>
+                    <section>
+                        Wie inkludiere ich eine externe Library?
+                        <br /><small>Beispiel flexslider:</small>
+                        <pre class="code__bigger"><code>
+libraries:
+  - THEME-NAME/flexslider
+                        </code></pre>
+                        <small>Datei: THEME-NAME.info.yml</small><br />
+                    </section>
 				</section>
 
 				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
+                    <section class="top" data-background="rgb(203,16,31)">
+                        <h1>Wie erstelle ich ein neues Theme <br /><span style="font-size: 0.6em">auf Basis eines vorhandenen?</span></h1>
+                    </section>
+                    <section>
+                        In THEME-NAME.info.yml das "base theme" definieren:
+                        <pre class="code__bigger"><code data-trim contenteditable>
+name: THEME-NAME
+description: 'An awesome D8 theme based on classy.'
+base theme: classy
+package: Custom
+type: theme
+version: 1.0
+core: 8.x
+                        </code></pre>
+                        <small>Datei: THEME-NAME.info.yml</small>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>
+                                Das "Sub theme" überschreibt das "Base theme".
+                            </li>
+                            <li class="fragment">Funktioniert auch mit dem Entfernen (stylesheets-remove) und Überschreibungen (stylesheets-overwrite) von CSS Dateien.<br />
+                                Beispiele: <a href="https://www.drupal.org/node/1876600">https://www.drupal.org/node/1876600</a></li>
+                        </ul>
+                    </section>
 				</section>
+                <section>
+                    <section class="top" data-background="rgb(203,16,31)">
+                        <h1>Breakpoints</h1>
+                    </section>
+                    <section>
+                        Hierzu wird eine THEME_NAME.breakpoints.yml Datei angelegt.
+                        <pre class="code__bigger"><code data-trim contenteditable>
+THEME-NAME.mobile:
+  label: mobile
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+THEME-NAME.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 480px) and (max-width: 959px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x  // For mac retina displays.
+                        </code></pre>
+                        <small>Datei: THEME-NAME.breakpoints.yml</small>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>In diesem Fall ist die Breakpoint Gruppe der THEME-NAME</li>
+                            <li class="fragment">Noch kein UI hierfür in Drupal 8 Core</li>
+                            <li class="fragment">Definierte Breakpoints sind systemweit vorhanden</li>
+                            <li class="fragment">Auch Module können Breakpoints definieren</li>
+                            <li class="fragment">Benutzt von zB: responsive_images Modul in Core</li>
+                            <li class="fragment">!= SASS breakpoints <a href="http://breakpoint-sass.com">http://breakpoint-sass.com</a></li>
+                            <li class="fragment">DrupalCon Amsterdam Session zum Thema: <a href="https://amsterdam2014.drupal.org/session/drupal-8-breakpoints-and-responsive-images">https://amsterdam2014.drupal.org/node/438</a></li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section class="top" data-background="rgb(203,16,31)">
+                        <h1>ImageStyles</h1>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Möglich durch Drupal 8 Configuration Management System</li>
+                            <li class="fragment">Konfigurationsdateien in Ordner THEME/config/install</li>
+                            <li class="fragment">Export der Konfiguration: admin/config/development/configuration/single/export</li>
+                            <li class="fragment">Theme install: Konfiguration wird übernommen</li>
+                        </ul>
+                        <aside class="notes">
+                            This slide has fragments which are also stepped through in the notes window.
+                        </aside>
+                    </section>
+                    <section>
+                        Beispiel config/install/image.style.slider_mobile.yml
+                        <pre class="code__bigger"><code data-trim contenteditable>
+uuid: 4dacc686-1f91-48af-bb01-1c765f5410a1
+langcode: en
+status: true
+dependencies: {  }
+name: slider_mobile
+label: 'Slider mobile'
+effects:
+  6d437f0f-0ff1-4736-9537-55e26f9ec57d:
+    uuid: 6d437f0f-0ff1-4736-9537-55e26f9ec57d
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: null
+      upscale: false
+third_party_settings: {  }
+                        </code></pre>
+                        <small>Datei image.style.slider_mobile.yml</small>
+                    </section>
+                </section>
+                <section>
+                    <section class="top" data-background="rgb(203,16,31)">
+                        <h1>Debugging</h1>
+                    </section>
+                    <section>
+                        <h3>CSS und js Aggregation deaktivieren</h3>
+                        <ul>
+                            <li class="fragment">Standardmässig aktiviert: <a href="https://www.drupal.org/node/2259531">drupal.org/node/2259531</a></li>
+                            <li class="fragment">1) example.settings.local.php in den Seitenordner kopieren und Datei-Namen ändern: "settings.local.php".
+                            </li>
+                            <li class="fragment">2) In der settings.php folgenden code aktivieren:
+                                <pre class="code__bigger"><code class="php" contenteditable>
+#if (file_exists(__DIR__ . '/settings.local.php')) {
+#  include __DIR__ . '/settings.local.php';
+#}
+                                </code></pre>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Devel Modul und Kint Modul installieren</h3>
+                        <ul>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+                            <li class="fragment">
+                                Devel Modul:
+                                <pre class="code__huge"><code data-trim contenteditable>
+$ drush dl devel
+$ drush en devel
+                                </code></pre>
+                            </li>
+                            <li class="fragment">
+                                Kint ist Krumo für Drupal 8: <a href="http://raveren.github.io/kint/">raveren.github.io/kint/</a>
+                                <pre class="code__huge"><code data-trim contenteditable>
+$ drush en kint
+                                </code></pre>
+                               <pre class="fragment code__huge"><code data-trim contenteditable>
+{{ kint($data); }}
+                               </code></pre>
+                            </li>
+                        </ul>
+                        <aside class="notes">
+                            KINT: var_dump() on steroids. Zeigt Daten fürs Debugging in bestmöglicher Form an.
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Template debugging</h3>
+                            <ul>
+                                <li class="fragment">Welches Template wird für das ausgegebene HTML verwendet?</li>
+                                <li class="fragment">TWIG debugging aktivieren:
+                                In der services.yml (Seitenordner) folgende Werte aktivieren:
+                                <pre><code data-trim contenteditable>
+parameters:
+  twig.config:
+    debug: true
+    auto_reload: true
+    twig_cache: false
+                                </code></pre>
+                                <small>Datei: services.yml</small></li>
+                            </ul>
+                        <small class="fragment">Mehr Infos: <a href="https://www.drupal.org/node/1903374">drupal.org/node/1903374</a></small>
+                    </section>
+                    <section>
+                        <h3>Template debugging</h3>
+                        -> Zusätzl. Informationen im HTML ersichtlich:
+                        <img src="images/twig-debugging.png" alt="twig debugging" />
+                        <aside class="notes">
+                            X: bedeutet dieses Template wird verwendet.
+                            *: Weitere mögliche Template Dateinamen, die für das Überschreiben verwendet werden können.
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>ESLint</h3>
+                        <ul>
+                            <li class="fragment">
+                                nodejs Modul: <a href="http://eslint.org/">http://eslint.org/</a>
+                            </li>
+                            <li class="fragment">Überprüft JavaScript auf Fehler und Coding Style</li>
+                            <li class="fragment">Konfigurationsdatei .eslintrc in Drupal Core</li>
+                            <li class="fragment">Installieren:
+                            <pre class="code__huge"><code>
+ $ npm i -g eslint
+                            </code></pre>
+                            </li>
+                            <li class="fragment">Ausführen (zB in Drupal Root):
+                            <pre class="code__huge"><code>
+$ eslint .
+                            </code></pre>
+                            </li>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+                        </ul>
+                        <aside class="notes">
+                            Um sicher zu gehen dass Komprimierung problemlos erfolgen kann.
+                            Integration in vielen IDEs und Editoren (zB PHPStorm).
+                            Konfigurationsdatei in Drupal Root wird automatisch erkannt und verwendet wenn ESLint benutzt wird.
+                            Beispiel ist Benutzung mit dem "Command Line Interface".
+                            npm: Node Package Manager.
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>CSSLint</h3>
+                        <ul>
+                            <li class="fragment">
+                                nodejs Modul: <a href="http://csslint.net/">http://csslint.net/</a>
+                            </li>
+                            <li class="fragment">Überprüft CSS auf Fehler und Coding Style</li>
+                            <li class="fragment">Konfigurationsdatei .csslintrc in Drupal Core</li>
+                            <li class="fragment">Installieren:
+                            <pre class="code__huge"><code>
+$ npm install -g csslint
+                            </code></pre>
+                            </li>
+                            <li class="fragment">Ausführen (zB im Theme Ordner):
+                            <pre class="code__huge"><code>
+$ csslint .
+                            </code></pre>
+                            </li>
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+                        </ul>
+                        <aside class="notes">
+                            Wie ESLInt nur für CSS.
+                            Um sicher zu gehen dass Komprimierung problemlos erfolgen kann.
+                            Integration in vielen IDEs und Editoren (zB PHPStorm). Auch grunt oder gulp tasks vorhanden.
+                            Konfigurationsdatei in Drupal Root wird automatisch erkannt und verwendet wenn CSSLint benutzt wird.
+                            Beispiel ist Benutzung mit dem "Command Line Interface".
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section class="top" data-background="rgb(203,16,31)">
+                        <h1>Coding Standards</h1>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+                    </section>
+                    <section>
+                        <h3>CSS Struktur (SMACCS)</h3>
+                        <ul>
+                            <li>SMACCS: Scalable and Modular Architecture for CSS</li>
+                            <li>https://smacss.com/</li>
+                            <li>System für die Organisation und Kategorisierung der CSS-Regeln</li>
 
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+                        </ul>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+                    </section>
+                    <section>
+                        <h3>CSS Struktur (SMACCS)</h3>
+                        <ol>
+                            <li>base.css</li>
+                            <li>layout.css</li>
+                            <li><del>modules.css</del> components.css</li>
+                            <li class="fragment">states.css</li>
+                            <li class="fragment">theme.css</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>CSS Klassen (BEM)</h3>
+                        <ul>
+                            <li>BEM: Block Element Modifier</li>
+                            <li>https://bem.info/method/definitions/</li>
+                            <li>Namenskonvention für CSS Klassen</li>
+                            <li>Modular, konsistent, skalierbar, wartbar</li>
+                            <li class="fragment">Visualisierung: http://johnalbin.github.io/flower-power/</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>CSS Klassen (BEM)</h3>
+                        <pre class="code__huge"><code>
+.block__element--modifier
+                        </code></pre>
+                        <ul>
+                            <li class="fragment">Block: Eigenständige Einheit oder Komponente einer Seite. Z.B. kleines Kontakformular auf Startseite</li>
+                            <li class="fragment">Element: Bestandteile des Blocks. z.B Überschrift, Beschreibung</li>
+                            <li class="fragment">Modifier: Konkrete Ausprägung des Blocks. z.B. eine Version mit hervorgehobenen Farben.</li>
+                        </ul>
+                    </section>
+                    <section>
+                    <h3>CSS Klassen (BEM)</h3>
+                        Beispiel:
+                        <pre class="code__bigger"><code>
+<div class="contact contact--small">
+  <div class="contact__title">TITLE</div>
+  <div class="contact__form">...</div>
+</div>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Mehr Infos zu Coding Standards</h3>
+                        <ul>
+                            <li>CSS Coding standards: https://www.drupal.org/node/1886770</li>
+                            <li>Javascript Coding standards: https://www.drupal.org/node/172169</li>
+                            <li>Twig Coding standards: https://www.drupal.org/node/1823416</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section class="top" data-background="rgb(203,16,31)">
+                        <h1>Templates (Twig)</h1>
+                    </section>
+                    <section>
+                        <h3>Was ist Twig?</h3>
+                        <ul>
+                            <li class="fragment">Moderne, schnelle und flexible PHP Template Engine</li>
+                            <li class="fragment">Seit 2009 Bestandteil von Symfony Framework</li>
+                            <li class="fragment">Wird weiterentwickelt von SensioLabs.</li>
+                            <li class="fragment">Ersetzt phptemplate theme engine in Drupal 8</li>
+                            <li class="fragment"><a href="http://twig.sensiolabs.org/">twig.sensiolabs.org/</a></li>
+                        </ul>
+                        <aside class="notes">
+                            Wird vorangetrieben von Fabien Potencier.
+                            twig templates werden intern in php templates kompiliert.
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Vorteile von Twig</h3>
+                        <ul>
+                            <li class="fragment">Mehr Sicherheit: Kein PHP mehr in den Templates!
+                            <pre class="fragment"><code>db_query('DROP TABLE {users}');</code></pre>
+                            </li>
+                            <li class="fragment">Mehr Sicherheit: <a href="https://www.drupal.org/node/2296163">Autoescape</a></li>
+                            <li class="fragment">Keine Mischung von Logik und Darstellung.</li>
+                            <li class="fragment">Konsistente und einfache Syntax</li>
+                            <li class="fragment">Viele Vereinfachungen für den Themer: zB Wegfall von "theming functions"</li>
+                            <li class="fragment">Sehr gute Dokumentation: <a href="http://twig.sensiolabs.org/documentation">twig.sensiolabs.org/documentation</a> </li>
+                            <li class="fragment">Chance auf Theme-System Neustart in Drupal</li>
+                        </ul>
+                        <aside class="notes">
+                            ...
+                        </aside>
+                    </section>
+                    <section data-background="images/drupal7-system.png">
+                    </section>
+                    <section data-background="images/drupal7-system2.jpg">
+                    </section>
+                    <section>
+                        <h2>Arbeiten mit Twig</h2>
+                        <h3>Variable ausgeben</h3>
+                            <pre class="code__huge"><code data-trim contenteditable>
 
-    var nodes = document.querySelectorAll( selector );
+  {{ VARIABLE }}
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+                            </code></pre>
+                        <h3>Kommentieren</h3>
+                        <pre class="code__huge fragment"><code data-trim contenteditable>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+  {# COMMENT #}
 
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+                        </code></pre>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment current-visible">current-visible</p>
-					</section>
-				</section>
+                    </section>
+                    <section>
+                        <h3>Mit Datenstrukturen arbeiten</h3>
+                        Einfacher Zugang zu hierarchisch angeordneten Daten.
+                            <pre class="code__huge"><code data-trim contenteditable>
+
+  {{ items.first.href }}
+
+                            </code></pre>
+                            <pre class="code__huge fragment"><code data-trim contenteditable>
+
+  {{ items.second.nid }}
+
+                            </code></pre>
+                    </section>
+                    <section>
+                        <h3>Filter</h3>
+                        Übergabe der Variable einer Funktion / einem Filter.
+                        <pre class="code__huge"><code data-trim contenteditable>
+
+  {{ VARIABLE|filter }}
+                        </code></pre>
+                        Wie zB t() für Übersetzungen:
+                        <pre class="code__huge fragment"><code data-trim contenteditable>
+
+  {{ String|t }}
+                        </code></pre>
+
+                    </section>
+                    <section>
+                        <h3>IF</h3>
+                        <pre class="code__bigger"><code data-trim contenteditable>
+{% if foo %}
+  <div>{{ foo }}</div>
+{% endif %}
+                        </code></pre>
+                        <aside class="notes">
+                            Wir brauchen "is_defined" nicht.
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Loops/Schleifen</h3>
+                        <pre class="code__bigger"><code data-trim contenteditable>
+{% for item in navigation %}
+  <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+{% endfor %}
+                        </code></pre>
+                        oder
+                        <pre class="code__bigger fragment"><code data-trim contenteditable>
+  {% for value, key in items %}
+    <div class="{{ key }}">{{ value }}</div>
+  {% endfor %}
+                        </code></pre>
+                        <aside class="notes">
+                            Bei zweitem Loop wollen wir key und value ausgeben.
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Loops/Schleifen</h3>
+                        <pre class="code__bigger"><code data-trim contenteditable>
+{{ loop.length }}
+{{ loop.first}}
+{{ loop.last }}
+{{ loop.index }}
+                        </code></pre>
+                        <pre class="code__bigger fragment"><code data-trim contenteditable>
+{% if loop.first %}
+  ...
+{% elseif loop.index == 2 %}
+  ...
+{% elseif loop.last %}
+  ...
+{% endif %}
+                        </code></pre>
+                        <aside class="notes">
+                            Volle Kontrolle über die Position der Values in der Schleife.
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Variablen setzen</h3>
+                        <pre class="code__bigger"><code data-trim contenteditable>
+{% set foo=“BAR” %}
+
+{{ foo }}
+                        </code></pre>
+Gibt "BAR" aus.
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Mehrsprachigkeit</h3>
+                        <pre class="code__bigger"><code class="twig" data-trim contenteditable>
+{% trans %}
+  Submitted by {{ author_name|passthrough }}
+  on {{ date|passthrough }}
+{% endtrans %}
+                        </code></pre>
+
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Beispiele</h3>
+                        <ul>
+                            <li>Menu template</li>
+                            <li>Pager template</li>
+                        </ul>
+
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section data-background="rgb(203,16,31)" class="top"><h1>Weiterführende Links und Quellen</h1></section>
+                    <section>
+                        <h3>Weiterführende Links und Quellen</h3>
+                        <ul>
+                          <li>Drupal 8 theme file structure: https://www.drupal.org/node/1887922</li>
+                          <li>Replace drupal.base with normalize: https://www.drupal.org/node/2168417</li>
+                          <li>Drush 7 commands: http://www.drushcommands.com/drush-7x</li>
+                          <li>Disable css and js aggregation for development: https://www.drupal.org/node/2259531</li>
+                          <li>Breakpoint added to Drupal 8: https://www.drupal.org/node/1813914</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Weiterführende Links und Quellen</h3>
+                        <ul>
+                           <li> Working with breakpoints in Drupal 8: https://www.drupal.org/node/1803874</li>
+                           <li> ESLint settings: https://www.drupal.org/node/1955232</li>
+                           <li>Drupal 8 Theming Guide: https://github.com/sqndr/d8-theming-guide</li>
+                           <li>DrupalCon Amsterdam 2014: Twig and the new Drupal 8 Theme System: http://www.youtube.com/watch?v=koNJEyRLwKk</li>
+                            <li>CSS Coding standards: https://www.drupal.org/node/1886770</li>
+                            <li>Javascript Coding standards: https://www.drupal.org/node/172169</li>
+                            <li>Twig Coding standards: https://www.drupal.org/node/1823416</li>
+
+                        </ul>
+                    </section>
+                </section>
 
 				<section data-background="rgb(203,16,31)" class="end">
-					<h1>THANK YOU</h1>
-					<h3>BY YOURNAME</h3>
+					<h1>Danke für die Aufmerksamkeit</h1>
+					<h3>Gibt es Fragen?</h3>
 				</section>
 
 			</div>
