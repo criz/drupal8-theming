@@ -1,7 +1,7 @@
 ##About##
-This is a presentation about Drupal 8 Theming ** in German**. Originally done for #d8day on Oct 17th in Vienna: http://www.drupal-austria.at/veranstaltungen/drupal-8-starter-day
+This is a presentation about Drupal 8 Theming **in German**. Originally done for #d8day on Oct 17th in Vienna: http://www.drupal-austria.at/veranstaltungen/drupal-8-starter-day
 
-##Licence##
+##License##
 http://creativecommons.org/licenses/by/4.0/
 
 You are free to share and adopt. Credit required.
