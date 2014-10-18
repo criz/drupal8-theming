@@ -366,10 +366,11 @@ third_party_settings: {  }
                         <h3>CSS und js Aggregation deaktivieren</h3>
                         <ul>
                             <li class="fragment">Standardmässig aktiviert: <a href="https://www.drupal.org/node/2259531">drupal.org/node/2259531</a></li>
-                            <li class="fragment">1) example.settings.local.php in den Seitenordner kopieren und Datei-Namen ändern: "settings.local.php".
+                            <li class="fragment">1) example.settings.local.php in den Seitenordner kopieren
+                                und Datei-Namen ändern: "settings.local.php".
                             </li>
                             <li class="fragment">2) In der settings.php folgenden code aktivieren:
-                                <pre class="code__bigger"><code class="php" contenteditable>
+                                <pre><code contenteditable>
 #if (file_exists(__DIR__ . '/settings.local.php')) {
 #  include __DIR__ . '/settings.local.php';
 #}
