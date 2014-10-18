@@ -151,7 +151,7 @@
                     </section>
                     <section>
                         <h3>1) THEME-NAME.info.yml anlegen und befüllen</h3>
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
   name: THEME-NAME
   description: 'A short description for the theme.'
   package: Custom
@@ -164,7 +164,7 @@
                     <section>
                         <h3>2) Regionen definieren</h3>
                         <small><a href="images/drupal8-regions.png">Was sind Regionen?</a></small>
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 regions:
   header: 'Header'
   content: 'Content'
@@ -178,7 +178,7 @@ regions_hidden:
                     </section>
                     <section>
                         <h3>3) CSS anlegen und definieren</h3>
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 stylesheets:
   all:
     - css/base.css
@@ -191,7 +191,7 @@ stylesheets:
                     </section>
                     <section>
                         <h3>CSS-Dateien entfernen oder überschreiben </h3>
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 # Overwrite a CSS file:​
 stylesheets-overwrite:
   - normalize.css
@@ -205,7 +205,7 @@ stylesheets-remove:
                     <section>
                         <h3>4) Javascript (libraries) hinzufügen</h3>
                         Anlegen einer neuen Datei: THEME-NAME.libraries.yml
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 base:
   version: 1.x
   js:
@@ -219,7 +219,7 @@ base:
                     </section>
                     <section>
                         In THEME-NAME.info.yml muss diese Library noch eingebunden werden:
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 libraries:
   - THEME-NAME/base
                         </code></pre>
@@ -228,7 +228,7 @@ libraries:
                     <section>
                         Wie inkludiere ich eine externe Library?
                         <br /><small>Beispiel flexslider:</small>
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 flexslider:
   version: 2.2.2
   license:
@@ -249,7 +249,7 @@ flexslider:
                     <section>
                         Wie inkludiere ich eine externe Library?
                         <br /><small>Beispiel flexslider:</small>
-                        <pre class="code__bigger"><code>
+                        <pre class="code--bigger"><code>
 libraries:
   - THEME-NAME/flexslider
                         </code></pre>
@@ -263,7 +263,7 @@ libraries:
                     </section>
                     <section>
                         In THEME-NAME.info.yml das "base theme" definieren:
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 name: THEME-NAME
 description: 'An awesome D8 theme based on classy.'
 base theme: classy
@@ -290,7 +290,7 @@ core: 8.x
                     </section>
                     <section>
                         Hierzu wird eine THEME_NAME.breakpoints.yml Datei angelegt.
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 THEME-NAME.mobile:
   label: mobile
   mediaQuery: '(min-width: 0px)'
@@ -337,7 +337,7 @@ THEME-NAME.narrow:
                     </section>
                     <section>
                         Beispiel config/install/image.style.slider_mobile.yml
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 uuid: 4dacc686-1f91-48af-bb01-1c765f5410a1
 langcode: en
 status: true
@@ -384,17 +384,17 @@ third_party_settings: {  }
 
                             <li class="fragment">
                                 Devel Modul:
-                                <pre class="code__huge"><code data-trim contenteditable>
+                                <pre class="code--huge"><code data-trim contenteditable>
 $ drush dl devel
 $ drush en devel
                                 </code></pre>
                             </li>
                             <li class="fragment">
                                 Kint ist Krumo für Drupal 8: <a href="http://raveren.github.io/kint/">raveren.github.io/kint/</a>
-                                <pre class="code__huge"><code data-trim contenteditable>
+                                <pre class="code--huge"><code data-trim contenteditable>
 $ drush en kint
                                 </code></pre>
-                               <pre class="fragment code__huge"><code data-trim contenteditable>
+                               <pre class="fragment code--huge"><code data-trim contenteditable>
 {{ kint($data); }}
                                </code></pre>
                             </li>
@@ -438,12 +438,12 @@ parameters:
                             <li class="fragment">Überprüft JavaScript auf Fehler und Coding Style</li>
                             <li class="fragment">Konfigurationsdatei .eslintrc in Drupal Core</li>
                             <li class="fragment">Installieren:
-                            <pre class="code__huge"><code>
+                            <pre class="code--huge"><code>
  $ npm i -g eslint
                             </code></pre>
                             </li>
                             <li class="fragment">Ausführen (zB in Drupal Root):
-                            <pre class="code__huge"><code>
+                            <pre class="code--huge"><code>
 $ eslint .
                             </code></pre>
                             </li>
@@ -466,12 +466,12 @@ $ eslint .
                             <li class="fragment">Überprüft CSS auf Fehler und Coding Style</li>
                             <li class="fragment">Konfigurationsdatei .csslintrc in Drupal Core</li>
                             <li class="fragment">Installieren:
-                            <pre class="code__huge"><code>
+                            <pre class="code--huge"><code>
 $ npm install -g csslint
                             </code></pre>
                             </li>
                             <li class="fragment">Ausführen (zB im Theme Ordner):
-                            <pre class="code__huge"><code>
+                            <pre class="code--huge"><code>
 $ csslint .
                             </code></pre>
                             </li>
@@ -522,7 +522,7 @@ $ csslint .
                     </section>
                     <section>
                         <h3>CSS Klassen (BEM)</h3>
-                        <pre class="code__huge"><code>
+                        <pre class="code--huge"><code>
 .block__element--modifier
                         </code></pre>
                         <ul>
@@ -534,7 +534,7 @@ $ csslint .
                     <section>
                     <h3>CSS Klassen (BEM)</h3>
                         Beispiel:
-                        <pre class="code__bigger"><code>
+                        <pre class="code--bigger"><code>
 <div class="contact contact--small">
   <div class="contact__title">TITLE</div>
   <div class="contact__form">...</div>
@@ -589,13 +589,13 @@ $ csslint .
                     <section>
                         <h2>Arbeiten mit Twig</h2>
                         <h3>Variable ausgeben</h3>
-                            <pre class="code__huge"><code data-trim contenteditable>
+                            <pre class="code--huge"><code data-trim contenteditable>
 
   {{ VARIABLE }}
 
                             </code></pre>
                         <h3>Kommentieren</h3>
-                        <pre class="code__huge fragment"><code data-trim contenteditable>
+                        <pre class="code--huge fragment"><code data-trim contenteditable>
 
   {# COMMENT #}
 
@@ -605,12 +605,12 @@ $ csslint .
                     <section>
                         <h3>Mit Datenstrukturen arbeiten</h3>
                         Einfacher Zugang zu hierarchisch angeordneten Daten.
-                            <pre class="code__huge"><code data-trim contenteditable>
+                            <pre class="code--huge"><code data-trim contenteditable>
 
   {{ items.first.href }}
 
                             </code></pre>
-                            <pre class="code__huge fragment"><code data-trim contenteditable>
+                            <pre class="code--huge fragment"><code data-trim contenteditable>
 
   {{ items.second.nid }}
 
@@ -619,12 +619,12 @@ $ csslint .
                     <section>
                         <h3>Filter</h3>
                         Übergabe der Variable einer Funktion / einem Filter.
-                        <pre class="code__huge"><code data-trim contenteditable>
+                        <pre class="code--huge"><code data-trim contenteditable>
 
   {{ VARIABLE|filter }}
                         </code></pre>
                         Wie zB t() für Übersetzungen:
-                        <pre class="code__huge fragment"><code data-trim contenteditable>
+                        <pre class="code--huge fragment"><code data-trim contenteditable>
 
   {{ String|t }}
                         </code></pre>
@@ -632,7 +632,7 @@ $ csslint .
                     </section>
                     <section>
                         <h3>IF</h3>
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 {% if foo %}
   <div>{{ foo }}</div>
 {% endif %}
@@ -643,13 +643,13 @@ $ csslint .
                     </section>
                     <section>
                         <h3>Loops/Schleifen</h3>
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 {% for item in navigation %}
   <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
 {% endfor %}
                         </code></pre>
                         oder
-                        <pre class="code__bigger fragment"><code data-trim contenteditable>
+                        <pre class="code--bigger fragment"><code data-trim contenteditable>
   {% for value, key in items %}
     <div class="{{ key }}">{{ value }}</div>
   {% endfor %}
@@ -660,13 +660,13 @@ $ csslint .
                     </section>
                     <section>
                         <h3>Loops/Schleifen</h3>
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 {{ loop.length }}
 {{ loop.first}}
 {{ loop.last }}
 {{ loop.index }}
                         </code></pre>
-                        <pre class="code__bigger fragment"><code data-trim contenteditable>
+                        <pre class="code--bigger fragment"><code data-trim contenteditable>
 {% if loop.first %}
   ...
 {% elseif loop.index == 2 %}
@@ -681,7 +681,7 @@ $ csslint .
                     </section>
                     <section>
                         <h3>Variablen setzen</h3>
-                        <pre class="code__bigger"><code data-trim contenteditable>
+                        <pre class="code--bigger"><code data-trim contenteditable>
 {% set foo=“BAR” %}
 
 {{ foo }}
@@ -692,7 +692,7 @@ Gibt "BAR" aus.
                     </section>
                     <section>
                         <h3>Mehrsprachigkeit</h3>
-                        <pre class="code__bigger"><code class="twig" data-trim contenteditable>
+                        <pre class="code--bigger"><code class="twig" data-trim contenteditable>
 {% trans %}
   Submitted by {{ author_name|passthrough }}
   on {{ date|passthrough }}

@@ -135,12 +135,12 @@ body {
  * Fragment Styles
  *********************************************/
 .highlight-red.current-fragment.visible {
-    color: rgb(203,16,31) !important;
+  color: rgb(203,16,31) !important;
 }
 
 
 /*********************************************
- * END Style
+ * END and TOP Style
  *********************************************/
 section.end h1,
 section.top h1,
@@ -152,31 +152,36 @@ section.end p,
 section.top p,
 section.end a,
 section.top a {
-    color: #fff !important;
+  color: #fff !important;
 }
 
-/* Overwrite fontawesome styles */
-
+/*********************************************
+ * FontAwesome
+ *********************************************/
 .reveal .fa {
-    -moz-font-feature-settings: normal;
-    -moz-font-language-override: normal;
-    -moz-osx-font-smoothing: grayscale;
-    -x-system-font: none;
-    display: inline-block;
-    font-family: FontAwesome;
-    font-size: inherit;
-    font-size-adjust: none;
-    font-stretch: normal;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    text-rendering: auto;
+  -moz-font-feature-settings: normal;
+  -moz-font-language-override: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -x-system-font: none;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: inherit;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-rendering: auto;
 }
 
-.reveal .code__bigger {
+/*********************************************
+ * Code formatter classes
+ *********************************************/
+
+.reveal .code--bigger {
   font-size: 1.2em;
 }
-.reveal .code__huge {
-    font-size: 1.4em;
+.reveal .code--huge {
+  font-size: 1.4em;
 }
